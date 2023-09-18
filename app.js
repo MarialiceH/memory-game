@@ -67,6 +67,11 @@ function createBoard () {
 
 createBoard()
 
+function checkMatch() {
+    console.log('check for match!')
+    cardsChosen[0] == cardsChosen[1]
+}
+
 function flipCard() {
     const cardId = this.getAttribute('data-id')
     cardsChosen.push(cardArray[cardId].name)
