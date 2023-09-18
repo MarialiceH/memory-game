@@ -68,9 +68,10 @@ function createBoard () {
 createBoard()
 
 function flipCard() {
-    console.log(cardArray)
     const cardId = this.getAttribute('data-id')
-    console.log(cardArray[cardId].name)
     cardsChosen.push(cardArray[cardId].name)
-    console.log('clicked', cardId)
+    this.setAttribute('src', cardArray[cardId].img)
+    if (cardsChosen.length === 2) {
+        setTimeout( checkMatch, 500)
+    }
 }
