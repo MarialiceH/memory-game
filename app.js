@@ -74,7 +74,7 @@ function checkMatch() {
     console.log('check for match!')
     if (cardsChosen[0] == cardsChosen[1]) {
         alert('You found a match!')
-
+        cards[cardsChosenIds[0]]
     }
 }
 
