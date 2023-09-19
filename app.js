@@ -74,7 +74,6 @@ function checkMatch() {
     console.log('check for match!')
     if (cardsChosen[0] == cardsChosen[1]) {
         alert('You found a match!')
-        cards[]
 
     }
 }
@@ -83,6 +82,8 @@ function flipCard() {
     const cardId = this.getAttribute('data-id')
     cardsChosen.push(cardArray[cardId].name)
     cardsChosenIds.push(cardId)
+    console.log(cardsChosen)
+    console.log(cardsChosenIds)
     this.setAttribute('src', cardArray[cardId].img)
     if (cardsChosen.length === 2) {
         setTimeout( checkMatch, 500)
