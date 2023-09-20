@@ -76,13 +76,15 @@ function checkMatch() {
     console.log(cards)
     console.log('check for match!')
 
-    if () {}
+    if (optionOneId == optionTwoId) {
+        alert('You found a match!')
+    }
     if (cardsChosen[0] == cardsChosen[1]) {
         alert('You found a match!')
-        cards[].setAttribute('src', 'images/white.png')
-        cards[cardsChosenIds[1]].setAttribute('src', 'images/white.png')
-        cards[cardsChosenIds[0]].removeEventListener('click', flipCard)
-        cards[cardsChosenIds[1]].removeEventListener('click', flipCard)
+        cards[optionOneId].setAttribute('src', 'images/white.png')
+        cards[optionTwoId].setAttribute('src', 'images/white.png')
+        cards[optionOneId].removeEventListener('click', flipCard)
+        cards[optionTwoId].removeEventListener('click', flipCard)
         cardsWon.push(cardsChosen)
     }
     cardsChosen = []
