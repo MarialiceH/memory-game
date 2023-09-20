@@ -91,14 +91,14 @@ function checkMatch() {
         cards[optionOneId].setAttribute('src', 'images/blank.png')
         cards[optionTwoId].setAttribute('src', 'images/blank.png')
         alert('Sorry, you have not found a match!')
-
-
     }
+    resultDisplay.textContent = cardsWon.length
+
     cardsChosen = []
     cardsChosenIds = []
 
     if (cardsWon.length == cardArray.length/2) {
-
+        resultDisplay.textContent = 'Congratulations you found them all!'
     }
 }
 
