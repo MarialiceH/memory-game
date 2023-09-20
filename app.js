@@ -53,6 +53,7 @@ cardArray.sort(() => 0.5 - Math.random())
 
 
 const gridDisplay = document.querySelector('#grid')
+const resultDisplay = document.querySelector('#result')
 let cardsChosen = []
 let cardsChosenIds = []
 const cardsWon = []
@@ -95,6 +96,10 @@ function checkMatch() {
     }
     cardsChosen = []
     cardsChosenIds = []
+
+    if (cardsWon.length == cardArray.length/2) {
+
+    }
 }
 
 function flipCard() {
