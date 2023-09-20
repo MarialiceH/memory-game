@@ -88,6 +88,9 @@ function checkMatch() {
         cardsWon.push(cardsChosen)
     } else {
         cards[optionOneId].setAttribute('src', 'images/blank.png')
+        cards[optionTwoId].setAttribute('src', 'images/blank.png')
+        alert('Sorry, you have not found a match!')
+
 
     }
     cardsChosen = []
